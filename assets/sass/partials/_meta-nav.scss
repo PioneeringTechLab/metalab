@@ -1,0 +1,162 @@
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(21,21,21,0.80);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1020;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 0.25s ease-in-out);
+
+    &.active{
+        opacity: 1;
+        visibility: visible;
+
+        @include transition(all 0.25s ease-in-out);
+    }
+
+    nav{
+        height: 100%;
+        width: 100%;
+        border-left: 2px solid rgba(255,255,255,0.12);
+        // border-right: 2px solid rgba(255,255,255,0.12);
+        display: table;
+        vertical-align: middle;
+    }
+    ul{
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+        li{
+            position: relative;
+            display: block;
+            list-style: none;
+            padding: 5px 0;
+            margin: 10px -1px;
+
+            &.current-menu-item{
+                a{
+                    border-color: $brand-primary;
+                    color: #fff;
+                }
+            }
+
+            a{
+                border-left: 2px solid transparent;
+                padding: 12px 35px;
+                font-size: 2.5em;
+                color: $gray-dark;
+                text-transform: uppercase;
+                letter-spacing: 3.75px;
+                @include transition(color 0.3s ease-in-out);
+                @include transition(border-left 0.3s ease-in-out);
+
+                &:hover{
+                    color: #fff;
+                    border-color: $gray-dark;
+                }
+
+                @media (max-width: $screen-sm){
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+.hamburger-icon{
+    width: $line-width;
+    height: $icon-height;
+    position: relative;
+    display: block;
+    margin: ($icon-height * 6) 5px $icon-height auto;
+    // padding: 4px;
+    // margin: 15px 25px 4px auto;
+
+    .line{
+        display: block;
+        background: #fff;
+        width: $line-width;
+        height: $line-height;
+        position: absolute;
+        left: 0;
+        @include transition(all 0.15s ease-in);
+
+        &.line-1{
+            top: 0;
+        }
+
+        &.line-2{
+            top: 8px;
+
+        }
+
+        &.line-3{
+            top: 16px;
+        }
+    }
+    &:hover, &:active{
+        .line-1{
+            @include transform(translateY(-1.5px) translateX(0px));
+        }
+        .line-3{
+            @include transform(translateY(1.5px) translateX(0px));
+        }
+    }
+    &.active{
+        .line-1{
+            @include transform(translateY(6px) translateX(0px) rotate(45deg));
+        }
+        .line-2{
+            opacity: 0;
+        }
+        .line-3{
+            @include transform(translateY(-10px) translateX(0px) rotate(-45deg));
+        }
+    }
+}
+
+@media screen and (min-width:300px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        padding-top: 12px;
+        // padding: 21px 15px;
+    }
+    .navbar>.container .navbar-brand-centered,
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+    img.metalab-logo{
+    	width: 50%;
+        @include transition(width, 0.2s, ease-in-out);
+        -webkit-transition: -webkit-transform 0.2s ease-in-out, width 0.2s ease-in-out;
+    }
+    img.csun-logo{
+        min-width: 65px;
+    	width: 35%;
+
+    }
+}
+
+@media (max-width: $screen-sm){
+    .hamburger-icon{
+        margin: ($icon-height * 4) 25px $icon-height auto;
+    }
+    img.metalab-logo{
+        width: 35%;
+    }
+    .overlay{
+        background-color: rgba(21,21,21,1);
+    }
+}

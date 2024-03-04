@@ -1,0 +1,193 @@
+.hero{
+	position: relative;
+	background-color: $gray-base;
+	min-height: 200px;
+	height: calc(100% - 30px);
+	overflow: hidden;
+	background-color: #fff;
+
+	@media (max-width: $screen-sm){
+		height: 100%;
+	}
+
+	#main-video{
+		width: 1920px;
+		height: auto;
+
+		@media (max-width: $screen-lg){
+			height: 100%;
+			width: auto;
+		}
+		@media (min-width: 1800px){
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.content{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 50;
+		@include transform(translate(-50%, -50%));
+
+		a{
+			display: block;
+			margin: 0 auto;
+			// color: #fff;
+		}
+	}
+
+	.gradient-overlay{
+		height: 400px;
+	}
+
+	.fullscreen-bg__video {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: auto;
+	    height: auto;
+
+	}
+}
+
+.academic-unit{
+	height: 180px;
+	margin-top: -80px;
+	position: relative;
+
+	.content{
+		top: -40px;
+		width: 100%;
+		z-index: 1000;
+		position: absolute;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.card{
+		height: 220px;
+		@include box-shadow(0px 6px 7px rgba(0,0,0,0.35));
+	}
+
+	@media (max-width: $screen-md){
+		margin-top: -65px;
+		height: 560px;
+		max-width: 100%;
+	}
+}
+
+.what-we-do{
+
+	.content{
+		margin-top: 35px;
+	}
+	h2{
+		text-align: center;
+	}
+	.card{
+		margin-bottom: 30px;
+	}
+}
+
+.opportunity{
+	height: 70vh;
+
+	.content{
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		z-index: 1000;
+		@include transform(translate(-50%, -50%));
+		width: 50%;
+
+		@media (max-width: $screen-sm){
+			width: 100%;
+		}
+	}
+	.gradient-overlay{
+		height: 100%;
+	}
+}
+
+.opportunity-bg{
+	background: url(assets/imgs/metawire.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 80%;
+}
+
+.twitterfeed {
+	text-align: center;
+}
+
+.call-out{
+	.content{
+		text-align: center;
+
+		h3{
+			display: inline-block;
+		}
+	}
+}
+
+.latest{
+	.content{
+		margin-top: 35px;
+
+		.btn-secondary{
+			margin-top: 25px;
+		}
+	}
+}
+
+.video-modal{
+
+	.video-iframe{
+		position: relative;
+		padding-bottom: 65.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: auto;
+		-webkit-overflow-scrolling:touch;
+		border: solid black 1px;
+
+		iframe{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 80%;
+		}
+	}
+
+	.modal-dialog{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+
+	.modal-content{
+		background-color: $gray-base;
+		height: 100%;
+	}
+
+	.modal-header{
+		border-bottom: 0px solid transparent;
+	}
+
+	.close{
+		color: #fff !important;
+	}
+
+	video{
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		display: block;
+	}
+}

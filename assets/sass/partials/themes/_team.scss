@@ -1,0 +1,37 @@
+.team-banner{
+	background: url(assets/imgs/team-bg.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+
+.talent-thumb{
+	position: relative;
+	display: inline;
+	z-index: 10;
+	overflow: hidden;
+
+
+	.talent-info{
+		position:absolute;
+		z-index: 12;
+		height: 100%;
+		width: 100%;
+		padding: 15px 25px;
+		background-color: rgba(0,0,0, 0.7);
+		opacity: 0;
+	  	-webkit-transition: all 0.4s ease-in-out;
+      	transition: all 0.4s ease-in-out;
+		
+		h3{
+			color: #fff !important;
+		}
+		p{
+			color: $gray;
+		}
+	}
+
+	&:hover{
+		.talent-info{
+			opacity: 1;
+		}
+	}
+}

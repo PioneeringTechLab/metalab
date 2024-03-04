@@ -1,0 +1,60 @@
+.about-banner{
+	background: url(assets/imgs/about-bg.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+
+.card-value{
+	height: 225px;
+}
+
+.opportunity-block{
+	height: 350px;
+	width: 100%;
+	padding: 25px;
+	border: 1px solid $gray-dark;
+	margin: 25px auto;
+	display: table;
+	@include transition(border-radius 0.25s ease-in-out);
+	background-color: $gray-base;
+
+	.opportunity-inner{
+		padding: 25px;
+		border: 1px solid $gray-darker;
+		display: table-cell;
+		vertical-align: middle;
+		@include transition(border-color 0.25s ease-in, border-radius 0.25s ease-in);
+	}
+
+	img{
+		height: 85px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	p{
+		opacity: 0;
+    	height: 0;
+    	overflow: hidden;
+		@include transition(opacity 0.25s ease-in);
+	}
+
+	&:hover{
+
+
+		.opportunity-inner{
+			border-color: $brand-primary;
+		}
+
+		img,h3,hr{
+			display: none;
+		}
+
+		p{
+			opacity: 1;
+			height: auto;
+			text-align: center;
+			@include transition(opacity 0.25s ease-in);
+		}
+	}
+}
+

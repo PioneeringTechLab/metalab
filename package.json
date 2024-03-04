@@ -1,0 +1,18 @@
+{
+  "name": "metalab",
+  "version": "2.0.0",
+  "description": "The new META+Lab Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Araik Yegiazaryan",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.5",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sass": "^2.0.4",
+    "node-sass": "^3.3.3"
+  }
+}

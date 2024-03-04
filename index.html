@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <title>META+LAB</title>
+  <script type="text/javascript" src="./js/webfonts.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script type="text/javascript" src="./js/scripts-min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script type="text/javascript">
+	window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"./js\/wp-emoji-release.min.js?ver=4.4"}};
+	!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),c.toDataURL().length>3e3):("simple"===a?d.fillText(String.fromCharCode(55357,56835),0,0):d.fillText(String.fromCharCode(55356,57135),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+	img.wp-smiley,
+	img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 .07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+  </style>
+<!-- <link rel='stylesheet' id='wp-pagenavi-css'  href='./assets/css/pagenavi-css.css?ver=2.70' type='text/css' media='all' /> -->
+<!-- <link rel='https://api.w.org/' href='http://localhost:8080/wp-json/' /> -->
+<!-- <link rel="canonical" href="/" /> -->
+<!-- <link rel='shortlink' href='/' /> -->
+<!-- <link rel="alternate" type="application/json+oembed" href="http://localhost:8080/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A8080%2F" /> -->
+<!-- <link rel="alternate" type="text/xml+oembed" href="http://localhost:8080/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flocalhost%3A8080%2F&#038;format=xml" /> -->
+</head>
+<body>
+
+  <div class="overlay overlay-slidedown" style="background-image: url(./assets/imgs/lines-right.png);
+background-size: contain; background-position: top right; background-repeat: no-repeat;">
+    <!-- <button type="button" class="overlay-close">Close</button> -->
+    <div class="col-sm-7 col-sm-offset-2 full-height">
+      <div class="container-fluid full-height">
+        <nav>
+          <ul id="menu-main-nav" class="menu">
+			<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-11">
+				<a href="/">Home</a>
+			</li>
+			<li id="menu-item-328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328">
+				<a href="./about/">About</a>
+			</li>
+			<li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331">
+				<a href="./our-team/">Our Team</a>
+			</li>
+			<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96">
+				<a href="./work/">Work</a>
+			</li>
+			<li id="menu-item-327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327">
+				<a href="./contact/">Contact</a>
+			</li>
+			<li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-228">
+				<a href="./blog/">Blog &#038; Events</a>
+			</li>
+		  </ul>
+		</nav>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+        <div class="container-fluid">
+
+          <div class="navbar-brand navbar-brand-centered">
+            <a href="/">
+              <img class="metalab-logo" src="./assets/imgs/metalab-logo.svg" alt="Meta Lab Logo" onerror="this.src='metalab-logo.png'; this.onerror=null;">
+            </a>
+          </div>
+
+          <div class="navbar-brand">
+            <a href="http://www.csun.edu">
+              <img class="csun-logo" src="./assets/imgs/csun-logo.svg" alt="CSUN Logo" onerror="this.src='csun-logo.png'; this.onerror=null;">
+            </a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="hamburger-icon" id="toggle-overlay" href="#" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+              </a>
+            </li>
+          </ul>
+
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header><!-- close header -->
+
+  <div id="content">
+<section class="section hero">
+	<div class="dark-overlay"></div>
+
+ 	<video id="main-video" preload="none" loop muted autoplay class="fullscreen-bg__video" poster="./assets/imgs/video-fallback.png"
+ 	 alt="video">
+        <source preload="none" src="./assets/vids/Background-Video_1.webm" type="video/webm">
+        <source preload="none" id="video-source" src="./assets/vids/Background-Video_1.mp4" type="video/mp4">
+        <!-- <source src="video/big_buck_bunny.ogv" type="video/ogg"> -->
+   </video>
+
+	<div class="content">
+		<h1 class="text-center">
+			Explore,<br>
+			Learn,<br>
+			Go Beyond.
+		</h1>
+		<hr class="line-lg line-center">
+		<a id="playvideo" type="button" data-toggle="modal" data-target="#videoModal" class="btn btn-link">
+			<button class="btn btn-round-primary btn-play">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 10 15" style="enable-background:new 0 0 10 15;" xml:space="preserve">
+				<style type="text/css">
+					.st0{fill:#FFFFFF;}
+				</style>
+				<path class="st0" d="M0.089,14.634l0-14.268l9.823,7.181L0.089,14.634z M1.089,2.308l0,10.4l7.092-5.166L1.089,2.308z"/>
+				</svg>
+				<!-- <img src="http://localhost:8080/wp-content/themes/metalab-v2/imgs/play.png" alt=""> -->
+			</button>
+			Play Video
+		</a>
+	</div>
+
+	<div class="gradient-overlay"></div>
+</section>
+
+<section class="section section-grey">
+	<div class="container">
+		<div class="academic-unit">
+			<div class="content">
+				<div class="row no-padding">
+					<div class="col-sm-12">
+					<hr class="line-xl">
+					</div>
+				</div>
+				<div class="row no-padding">
+					<div class="row-eq-height">
+						<div class="col-sm-12 col-md-4">
+							<div class="card card-dark" style="background-image: url(./assets/imgs/lines-left-2-white.png);
+			background-size: contain; background-position: bottom left; background-repeat: no-repeat;">
+								<div class="card-content">
+									<h3>Academic Unit</h3>
+									<p>We extend the curriculum by experimentation and collaboration.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-4">
+							<div class="card card-dark" style="background-image: url(./assets/imgs/lines-left-white.png);
+			background-size: contain; background-position: bottom left; background-repeat: no-repeat;">
+								<div class="card-content">
+									<h3>Startup Environment</h3>
+									<p>We build applications with real clients on real projects.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-4">
+							<div class="card card-dark" style="background-image: url(./assets/imgs/lines-left-white.png);
+			background-size: contain; background-position: bottom left; background-repeat: no-repeat;">
+								<div class="card-content">
+									<h3>Complete our challenge</h3>
+									<p>If you complete the challenge we will post it on our Twitter feed.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section section-white" style="background-image: url(./assets/imgs/lines-right-white.png);
+background-size: 50%; background-position: top right; background-repeat: no-repeat;">
+	<div class="container">
+		<div class="twitterfeed">
+			<h2>Are you our new Front-End Developer?</h2>
+			<hr class="line-lg line-center">
+			<div class="content">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card card-light">
+								<div class="card-content-sm center-content text-center">
+									<h3>Front-End Challenge</h3>
+									<p>Complete our challenge, and we will <br />add your name to our Twitter Feed.</p>
+									<br />
+									<p>Send your solution to <a href="mailto:info@metalab.csun.edu">info@metalab.csun.edu</a>.</p>
+									<br />
+									<a href="./assets/imgs/challenge/challenge.png"><img src="./assets/imgs/challenge/challenge-sm.png" class="img-responsive"></a>
+									<br />
+									<a href="./assets/imgs/challenge/challenge.png" class=" btn btn-primary">Download</a>
+								</div>
+							</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card card-light">
+							<div class="card-content-sm center-content text-center">
+
+					<a class="twitter-timeline" href="https://twitter.com/csunMetaLab" data-widget-id="725478156350562304">Tweets by @csunMetaLab</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<hr class="line-xl">
+<section class="section section-white" style="background-image: url(./assets/imgs/lines-right-white.png);
+background-size: 50%; background-position: top right; background-repeat: no-repeat;">
+	<div class="container">
+		<div class="what-we-do">
+			<h2>What we do</h2>
+			<hr class="line-lg line-center">
+			<div class="content">
+				<div class="row">
+					<div class="col-sm-12 col-lg-4">
+						<div class="card card-light">
+							<div class="card-content-sm center-content text-center">
+								<h3>User Experience</h3>
+								<p>We believe, in order to build great products users must be involved in the process.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="card card-light">
+							<div class="card-content-sm center-content text-center">
+								<h3>Design</h3>
+								<p>Our designers are always pushing the boundaries and creating beautiful interfaces.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="card card-light">
+							<div class="card-content-sm center-content text-center">
+								<h3>Development</h3>
+								<p>We develop with PHP using the Laravel framework and various front-end libraries.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="card card-light">
+							<div class="card-content-lg center-content text-center">
+								<h3>Teamwork</h3>
+								<p>Teamwork is at the forefront of what we do. We believe amazing ideas are born through collaboration and teamwork. In addition, we all learn a lot from one another.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 text-center">
+						<a href="http://localhost:8080/work/" class=" btn btn-default">See What We've Made</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="section section-black opportunity-bg">
+	<div class="opportunity">
+		<div class="content">
+			<h1 class="mega">The Best Opportunity for Growth</h1>
+			<a class="btn btn-link-secondary" href="/contact/">
+				Join the team<br>
+				<button class="btn btn-round-default">
+					<i class="fa fa-arrow-right"></i>
+				</button>
+			</a>
+		</div>
+	<div class="gradient-overlay"></div>
+	</div>
+</section>
+
+<section class="section section-white" style="background-image: url(./assets/imgs/lines-left-2-white.png);
+background-size: 20%; background-position: bottom left; background-repeat: no-repeat;">
+	<div class="call-out">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<div class="content">
+						<h3>Interested in working with us?</h3>
+						<a class="btn btn-link-default" href="./contact/">
+							Let's talk!
+							<button class="btn btn-round-default">
+								<i class="fa fa-arrow-right"></i>
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="section section-smoked">
+	<div class="container">
+		<div class="latest">
+			<h2 class="text-center">Latest</h2>
+			<hr class="line-lg line-center">
+			<div class="content">
+				<div class="row no-padding row-eq-height">
+
+						
+						
+						<div class="col-md-12 col-lg-4">
+							<div class="card card-dark">
+								<div class="card-content-xl card-content-action blog-block">
+									<h3>From Student to Explorer...</h3>
+									<hr class="line-inline">
+									<span>May27</span>
+									<p>It was just another ordinary Friday afternoon in my Human [&hellip;]</p>
+									<a class="btn btn-link" href="./from-student-to-explorer-2/" target="_blank"><button class="btn btn-round-primary"><i class="fa fa-plus"></i></button>Read More</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-12 col-lg-4">
+							<div class="card card-dark">
+								<div class="card-content-xl card-content-action blog-block">
+									<h3>My Experience Coaching at...</h3>
+									<hr class="line-inline">
+									<span>May05</span>
+									<p>So about two weeks ago I had the pleasure of [&hellip;]</p>
+									<a class="btn btn-link" href="./my-experience-coaching-at-rails-girls-la-2015/" target="_blank"><button class="btn btn-round-primary"><i class="fa fa-plus"></i></button>Read More</a>
+								</div>
+							</div>
+						</div>
+						
+
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<a class="btn btn-secondary" href="./blog/">Check out our blog</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Modal -->
+<div class="video-modal modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+      </div>
+      <div class="modal-body">
+      <div class="video-iframe">
+      <iframe src="https://www.youtube.com/embed/2w41jy_8amE" frameborder="0" allowfullscreen></iframe>
+        <!-- <video class="fullscreen-bg__video" controls>
+        	<source src="video/metalab-video.webm" type="video/webm">
+        	<source src="http://localhost:8080/wp-content/themes/metalab-v2/assets/vids/metalab-video.mp4" type="video/mp4">
+        	<source src="video/big_buck_bunny.ogv" type="video/ogg">
+    	</video> -->
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<section id="footer">
+	<section class="section">
+		<div class="container">
+			<div class="content">
+				<div class="footer-logo">
+					<img src="./assets/imgs/metalab-logo-2.png" alt="meta lab logo">
+					<h5>Matador Emerging Technology & Arts</h5>
+				</div>
+					<hr>
+					<div class="row">
+					<div class="col-sm-6">
+						<ul class="list-inline footer-nav">
+							<li>
+								<a href="/">Home</a>
+							</li>
+							<li>
+								<a href="./about/">About</a>
+							</li>
+							<li>
+								<a href="./our-team/">Our Team</a>
+							</li>
+							<li>
+								<a href="./work/">Work</a>
+							</li>
+							<li>
+								<a href="./contact/">Contact</a>
+							</li>
+							<li>
+								<a href="./blog/">Blog</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="list-inline social pull-right">
+							<li>
+								<a href="https://www.facebook.com/csunmetalab" target="_blank"><img src="./assets/imgs/fb.png" alt="Facebook Icon"></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/csunMetaLab" target="_blank"><img src="./assets/imgs/tw.png" alt="Twitter Icon"></a>
+							</li>
+							<li>
+								<a href="https://instagram.com/csunmetalab/" target="_blank"><img src="./assets/imgs/ig.png" alt="Instagram Icon"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script type='text/javascript' src='./js/wp-embed.min.js?ver=4.4'></script>
+
+	<div class="gradient-overlay"></div>
+	</section>
+</section>
+
+</div> <!-- close #content -->
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+address{
+	strong{
+		text-transform: uppercase;
+	}
+	line-height: 1.8;
+}
+
+.contact-form input, .contact-form textarea{
+	background-color: $gray-base;
+	border: none;
+	border-bottom: 1px solid #999;
+	color: white;
+	font-size: 1.8em !important;
+}
+
+.gform_wrapper input, textarea {
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.gform_wrapper textarea:active, textarea:focus {
+	height: 200px !important;
+}
+
+.gfield {
+	margin-bottom: 45px;
+}
+
+.gform_wrapper .top_label .gfield_label {
+	margin: 0 !important;
+}
+
+.contact-form label.gfield_label {
+	color: #999;
+	/*position: absolute;*/
+}
+
+.contact-form input:active, .contact-form input:focus, .contact-form textarea:active, .contact-form textarea:focus {
+	border-bottom: 2px solid #cd1d26;
+}
+
+#gform_submit_button_1, .button, .gform_button {
+	display: inline-block;
+	padding: 10px 75px;
+	font-size: 1.35em !important;
+	margin-bottom: 0;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 0;
+	color: #fff;
+	background-color: #cd1d26;
+	border-color: #cd1d26;
+	text-transform: uppercase;
+}

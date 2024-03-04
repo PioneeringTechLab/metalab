@@ -1,0 +1,57 @@
+.work-banner{
+	background: url(assets/imgs/work-bg.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+
+.product-faculty{
+	// background: url(assets/imgs/faculty-mobile.png) no-repeat 250px -600%;
+	// background-size: auto;
+	// position: relative;
+ //    overflow: hidden;
+ 	img{
+ 		width: auto;
+	    height: 100%;
+	    right: -80px;
+	    top: 30%;
+ 	}
+}
+
+.product-jewel{
+	// background: url(assets/imgs/jewel-mockup.png) no-repeat 150px 100%;
+	// background-size: auto;
+}
+
+.work-block{
+	position: relative;
+    overflow: hidden;
+
+	img{
+		position: absolute;
+	    opacity: 1;
+	    @include transition(opacity 0.3s ease-in-out);
+	}
+
+	p{
+		height: 80px;
+		white-space: normal;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		margin-top: 12px;
+		opacity: 0;
+		z-index: 2;
+		@include transition(opacity 0.3s ease-in-out);
+	}
+
+	&:hover{
+
+		img{
+			opacity: 0.2;
+			@include filter(blur(3px));
+			@include transform(translate(0, 0, 0));
+		}
+
+		p{
+			opacity: 1;
+		}
+	}
+}

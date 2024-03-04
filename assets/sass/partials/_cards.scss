@@ -1,0 +1,87 @@
+.card{
+	outline: 1px solid transparent;
+	display: table;
+	width: 100%;
+
+	&.card-light{
+		background-color: #fff;
+		outline-color: $gray;
+		color: $gray-dark;
+
+		h1,h2,h3{
+			color: $gray-base;
+		}
+	}
+
+	&.card-dark{
+		background-color: $gray-base;
+		outline-color: $gray-darker;
+
+		h1,h2,h3{
+			color: #fff;
+		}
+	}
+
+	.center-content{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.card-content{
+		padding: 20px 70px 50px 67px;
+		min-height: 210px;
+
+		@media (max-width: $screen-sm){
+			padding: 50px;
+		}
+	}
+
+	.card-content-xl{
+		padding: 50px;
+	}
+
+	.card-content-lg{
+		padding: 25px 65px;
+		min-height: 200px;
+	}
+
+	.card-content-sm{
+		padding: 20px;
+		min-height: 200px;
+	}
+
+	.card-content-action{
+		width: 100%;
+		min-height: 350px;
+		@include transition(box-shadow 0.3s ease-in-out);
+
+		&:hover{
+			@include box-shadow(0px 0px 8px $gray);
+			z-index: 10;
+		}
+
+		span{
+			color: $brand-primary;
+		}
+
+		h1,h2,h3{
+			margin-top: 0;
+		}
+
+		a.btn{
+			// position: absolute;
+			// bottom: 10%;
+			// left: 30px;
+			margin-left: -15px;
+			margin-top: 0px;
+			z-index: 1000 !important;
+			position: absolute !important;
+		}
+	}
+
+	.card-img{
+		width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+}
